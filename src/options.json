@@ -1,0 +1,33 @@
+{
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "locationData": {
+            "description": "Assign location properties to each object.",
+            "oneOf": [
+                {"type": "boolean"},
+                {
+                    "type": "object",
+                    "required": ["start", "end"],
+                    "additionalProperties": false,
+                    "properties": {
+                        "start": {
+                            "type": "string"
+                        },
+                        "end": {
+                            "type": "string"
+                        }
+                    }
+                }
+            ]
+        },
+        "functions": {
+            "description": "Inject functions from @bavary/lib.",
+            "type": "array",
+            "default": [],
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

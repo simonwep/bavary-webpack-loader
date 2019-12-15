@@ -1,0 +1,52 @@
+{
+    "name": "@bavary/webpack-loader",
+    "version": "0.0.0",
+    "description": "Webpack Loader for bavary declaration files",
+    "author": "Simon Reinisch <trash@reinisch.io>",
+    "main": "dist/index.js",
+    "license": "MIT",
+    "keywords": [
+        "bavary",
+        "cli",
+        "parser",
+        "library",
+        "ast",
+        "compiler",
+        "language",
+        "programming-language",
+        "regex",
+        "regexp",
+        "webpack",
+        "webpack-loader"
+    ],
+    "scripts": {
+        "build": "babel src -d dist --copy-files",
+        "lint": "eslint src/**/*.js --fix",
+        "test:lint": "eslint src/**/*.js"
+    },
+    "files": [
+        "lib",
+        "src"
+    ],
+    "homepage": "https://github.com/Simonwep/bavary-webpack#readme",
+    "repository": "github:Simonwep/bavary-webpack-loader",
+    "bugs": "https://github.com/Simonwep/bavary-webpack-loader/issues",
+    "devDependencies": {
+        "@babel/cli": "^7.7.5",
+        "@babel/core": "^7.7.5",
+        "@babel/plugin-proposal-optional-chaining": "^7.7.5",
+        "@babel/preset-env": "^7.7.6",
+        "babel-eslint": "^10.0.3",
+        "eslint": "^6.7.2",
+        "eslint-config-problems": "^3.0.1",
+        "eslint-loader": "^3.0.3"
+    },
+    "dependencies": {
+        "loader-utils": "^1.2.3",
+        "schema-utils": "^2.6.1"
+    },
+    "peerDependencies": {
+        "@bavary/core": "latest",
+        "@bavary/lib": "latest"
+    }
+}

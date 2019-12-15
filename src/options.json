@@ -2,6 +2,9 @@
     "type": "object",
     "additionalProperties": false,
     "properties": {
+        "esModule": {
+            "type": "boolean"
+        },
         "locationData": {
             "description": "Assign location properties to each object.",
             "oneOf": [

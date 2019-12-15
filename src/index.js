@@ -11,12 +11,13 @@ export default function (content) {
         baseDataPath: 'options'
     });
 
+    const esModule = typeof options.esModule !== 'undefined' ? options.esModule : true;
     const functions = options?.functions?.length ? JSON.stringify(options.functions) : null;
 
     return `
         const {compile} = require('@bavary/core');
 
-        module.exports = compile(${JSON.stringify(content)}, {
+        ${esModule ? 'export default' : 'module.exports = '} compile(${JSON.stringify(content)}, {
             locationData: ${options?.locationData || false},
             functions: ${functions ? `require('@bavary/lib').use(${functions})` : {}}
         });

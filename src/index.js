@@ -11,7 +11,7 @@ export default function (content) {
         baseDataPath: 'options'
     });
 
-    const esModule = typeof options.esModule !== 'undefined' ? options.esModule : true;
+    const esModule = typeof options.esModule !== 'undefined' ? options.esModule : null;
     const functions = options?.functions?.length ? JSON.stringify(options.functions) : null;
 
     return `
@@ -19,7 +19,7 @@ export default function (content) {
 
         ${esModule ? 'export default' : 'module.exports = '} compile(${JSON.stringify(content)}, {
             locationData: ${options?.locationData || false},
-            functions: ${functions ? `require('@bavary/lib').use(${functions})` : {}}
+            functions: ${functions ? `require('@bavary/lib').use(${functions})` : 'null'}
         });
     `;
 }

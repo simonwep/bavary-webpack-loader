@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader Should work without options: assets 1`] = `
+Array [
+  "main.bundle.js",
+]
+`;
+
+exports[`Loader Should work without options: errors 1`] = `Array []`;
+
+exports[`Loader Should work without options: result 1`] = `"A"`;
+
+exports[`Loader Should work without options: warnings 1`] = `Array []`;

@@ -5,6 +5,12 @@
 <br>
 
 <p align="center">
+    <a href='https://coveralls.io/github/Simonwep/bavary-webpack-loader?branch=master'><img
+       src='https://img.shields.io/coveralls/github/Simonwep/bavary-webpack-loader?style=flat-square'
+       alt='Coverage Status'/></a>
+    <a href="https://travis-ci.org/Simonwep/bavary-webpack-loader"><img
+       alt="Build Status"
+       src="https://img.shields.io/travis/Simonwep/bavary-webpack-loader.svg?style=flat-square"></a>
     <a href="https://www.npmjs.com/package/@bavary/webpack-loader"><img
        alt="Download count"
        src="https://img.shields.io/npm/dm/@bavary/webpack-loader.svg?style=flat-square"></a>

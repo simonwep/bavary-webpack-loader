@@ -9,6 +9,7 @@ install:
 script:
     - npm run build
     - npm run test:lint
+    - npm run test:report
 
 cache:
     directories:

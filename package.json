@@ -25,7 +25,8 @@
         "test:lint": "eslint src/**/*.js",
         "test": "jest",
         "test:watch": "jest --watchAll",
-        "test:coverage": "jest --coverage "
+        "test:coverage": "jest --coverage",
+        "test:report": "jest --coverage --coverageReporters=text-lcov | coveralls"
     },
     "files": [
         "lib",
@@ -42,6 +43,7 @@
         "@bavary/core": "0.0.18",
         "@bavary/lib": "0.0.2",
         "babel-eslint": "^10.0.3",
+        "coveralls": "^3.0.9",
         "eslint": "^6.7.2",
         "eslint-config-problems": "^3.0.1",
         "eslint-loader": "^3.0.3",

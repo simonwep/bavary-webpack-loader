@@ -18,8 +18,8 @@ export default function (content) {
         const {compile} = require('@bavary/core');
 
         ${esModule ? 'export default' : 'module.exports = '} compile(${JSON.stringify(content)}, {
-            locationData: ${options?.locationData || false},
-            functions: ${functions ? `require('@bavary/lib').use(${functions})` : 'null'}
+            functions: ${functions ? `require('@bavary/lib').use(${functions})` : 'null'},
+            locationData: ${options.locationData ? JSON.stringify(options.locationData) : false},
         });
     `;
 }

@@ -1,4 +1,4 @@
-export default compiler => {
+export default compiler => { // TODO: Merge
     return new Promise((resolve, reject) => {
         compiler.run(
             (error, stats) => error ?

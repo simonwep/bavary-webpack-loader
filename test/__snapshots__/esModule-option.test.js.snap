@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Option: "esModule" Should work with "Boolean" value equal "false": errors 1`] = `Array []`;
+
+exports[`Option: "esModule" Should work with "Boolean" value equal "false": result 1`] = `"A"`;
+
+exports[`Option: "esModule" Should work with "Boolean" value equal "false": warnings 1`] = `Array []`;
+
+exports[`Option: "esModule" Should work with "Boolean" value equal "true": errors 1`] = `Array []`;
+
+exports[`Option: "esModule" Should work with "Boolean" value equal "true": result 1`] = `"A"`;
+
+exports[`Option: "esModule" Should work with "Boolean" value equal "true": warnings 1`] = `Array []`;
+
+exports[`Option: "esModule" Should work without value: errors 1`] = `Array []`;
+
+exports[`Option: "esModule" Should work without value: result 1`] = `"A"`;
+
+exports[`Option: "esModule" Should work without value: warnings 1`] = `Array []`;

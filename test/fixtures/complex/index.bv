@@ -1,0 +1,15 @@
+entry {
+    <raw-num> = [(0 - 9)+]
+    <num-sign> = [ '+' | '-' ]
+    <scientific-notation> = ['e' <num-sign>? <raw-num>]
+    <scientific-num> = [<raw-num> <scientific-notation>?]
+
+    default [
+        <num-sign#sign>?
+        [<raw-num#num>? '.' <scientific-num#decimal>] |
+        [<scientific-num#num>]
+
+        // Function @bavary/lib
+        count(#num, numLength)
+    ]
+}

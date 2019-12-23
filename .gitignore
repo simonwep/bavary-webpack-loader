@@ -67,4 +67,4 @@ typings/
 .idea
 
 # Test and dist files
-dist
+lib

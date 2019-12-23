@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "description": "Webpack Loader for bavary declaration files",
     "author": "Simon Reinisch <trash@reinisch.io>",
-    "main": "dist/index.js",
+    "main": "lib/index.js",
     "license": "MIT",
     "keywords": [
         "bavary",
@@ -20,7 +20,7 @@
         "webpack-loader"
     ],
     "scripts": {
-        "build": "babel src -d dist --copy-files",
+        "build": "babel src -d lib --copy-files",
         "lint": "eslint src/**/*.js --fix",
         "test:lint": "eslint src/**/*.js",
         "test": "jest",

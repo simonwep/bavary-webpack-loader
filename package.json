@@ -1,6 +1,6 @@
 {
     "name": "@bavary/webpack-loader",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Webpack Loader for bavary declaration files",
     "author": "Simon Reinisch <trash@reinisch.io>",
     "main": "lib/index.js",

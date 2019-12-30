@@ -23,7 +23,7 @@ export default (fixture, loaderOptions = {}, config = {}) => {
                     rules: [
                         {
                             loader: path.resolve(__dirname, '../../src'),
-                            options: loaderOptions || {}
+                            options: loaderOptions
                         }
                     ]
                 }

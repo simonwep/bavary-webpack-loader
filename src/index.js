@@ -3,7 +3,7 @@ import {getOptions}    from 'loader-utils';
 import schema          from './options';
 
 export default function (content) {
-    const options = getOptions(this);
+    const options = getOptions(this) || {};
 
     // Validate config object
     validateOptions(schema, options, {
@@ -15,7 +15,7 @@ export default function (content) {
         esModule = null,
         functions = null,
         ...coreOptions
-    } = options;
+    } = options; // TODO: Wtf is wrong here
 
     return `
         const {compile} = require('@bavary/core');

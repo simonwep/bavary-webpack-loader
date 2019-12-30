@@ -64,6 +64,9 @@ const options =  {
     // Module type
     esModule: false,
 
+    // Inject functions from @bavary/lib. Be sure to install @bavary/lib to use them
+    functions: ['count', ...],
+
     ...bavaryOptions
 }
 ```
